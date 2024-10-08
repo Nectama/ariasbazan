@@ -1,38 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 import App from './App';
-import Cursos from './Cursos';
-import Nosotros from './Nosotros';
-import Galeria from './Galeria';
-
-const router = createBrowserRouter([
-
-  {
-    path: '/',
-    element: <App />
-  },
-  {
-    path: '/cursos',
-    element: <Cursos />
-  },
-  {
-    path: '/nosotros',
-    element: <Nosotros />
-  },
-  {
-    path: '/galeria',
-    element: <Galeria />
-  }
-
-]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>,
 );
 

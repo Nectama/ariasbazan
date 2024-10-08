@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import './Cursos.css';
 import Navmenu from './Navmenu';
 
-function Cursos({ algo }) {
+function Cursos({ courseType, setselectedCourseType }) {
 
   const coursesData = {
     tradicionales: [
@@ -215,49 +215,39 @@ function Cursos({ algo }) {
 
   // const and functions to switch between categories and titles
 
-  const [selectedCourseType, setSelectedCourseType] = useState(algo); // Default selection
-
   const handleCourseTypeChange = (event) => {
-    setSelectedCourseType(event.target.value);
+    setselectedCourseType(event.target.value);
   };
 
-  const displayedCourses = coursesData[selectedCourseType] || []; // Handle empty array
-  const selectedCourseLabel = courseTypeLabels[selectedCourseType] || 'Cursos'; // Default label 
-
-  useEffect(() => {
-    return () => {
-      if (algo !== selectedCourseType) {
-        setSelectedCourseType(algo)
-      }
-    };
-  }, [algo]);
+  const displayedCourses = coursesData[courseType] || []; // Handle empty array
+  const selectedCourseLabel = courseTypeLabels[courseType] || 'Cursos'; // Default label 
 
   return (
     <>
       <img className='backgroundDecoration' src='./resources/backgroundimg.webp' alt='' />
-      <Navmenu />
+      <Navmenu courseType={courseType} setselectedCourseType={setselectedCourseType}/>
 
       <div className="cursos">
         <div className="sortMenu">
           <h2>Cursos <br /><span className='titleItalic'>{selectedCourseLabel}</span></h2> {/* Dynamically show selected course label */}
           <ul>
             <li>
-              <button style={{ fontWeight: selectedCourseType === 'tradicionales' ? 'bold' : 'normal' }} value="tradicionales" onClick={handleCourseTypeChange}>
+              <button style={{ fontWeight: courseType === 'tradicionales' ? 'bold' : 'normal' }} value="tradicionales" onClick={handleCourseTypeChange}>
                 Tradicionales
               </button>
             </li>
             <li>
-              <button style={{ fontWeight: selectedCourseType === 'online' ? 'bold' : 'normal' }} value="online" onClick={handleCourseTypeChange}>
+              <button style={{ fontWeight: courseType === 'online' ? 'bold' : 'normal' }} value="online" onClick={handleCourseTypeChange}>
                 Online
               </button>
             </li>
             <li>
-              <button style={{ fontWeight: selectedCourseType === 'fashion' ? 'bold' : 'normal' }} value="fashion" onClick={handleCourseTypeChange}>
+              <button style={{ fontWeight: courseType === 'fashion' ? 'bold' : 'normal' }} value="fashion" onClick={handleCourseTypeChange}>
                 Moda
               </button>
             </li>
             <li>
-              <button style={{ fontWeight: selectedCourseType === 'advanced' ? 'bold' : 'normal' }} value="advanced" onClick={handleCourseTypeChange}>
+              <button style={{ fontWeight: courseType === 'advanced' ? 'bold' : 'normal' }} value="advanced" onClick={handleCourseTypeChange}>
                 Avanzado
               </button>
             </li>

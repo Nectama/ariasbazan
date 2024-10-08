@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navmenu.css';
 import CursosMenu from './Cursosmenu';
 
-const Navmenu = () => {
+const Navmenu = ({courseType, setselectedCourseType}) => {
 
   /* Handling opening and closing the mobile menu */
 
@@ -18,8 +18,6 @@ const Navmenu = () => {
   };
 
   /* ----------------------------------------------- */
-
-  const [marcello, helloMarcello] = useState("tradicionales");
 
 
   /* Handling location so the current location is displayed in bold letters in the menu */
@@ -47,7 +45,7 @@ const Navmenu = () => {
     return (
       <li className={active ? 'active' : ''}>
         <Link to={path}>{label}</Link>
-        {location.pathname === '/cursos' && path === '/cursos' && <div className="sub-nav"> <CursosMenu algo={marcello} setAlgo={helloMarcello} /> </div>}
+        {location.pathname === '/cursos' && path === '/cursos' && <div className="sub-nav"> <CursosMenu courseType={courseType} setselectedCourseType={setselectedCourseType} /> </div>}
       </li>
     );
   };
