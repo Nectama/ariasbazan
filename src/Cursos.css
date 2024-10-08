@@ -1,0 +1,114 @@
+.cursos {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cursosContainer {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cursoContainer {
+    width: 30%;
+    margin: 1rem;
+}
+
+.tarjetaCurso {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tarjetaCurso,
+.cursoImagen {
+    max-width: 100%;
+}
+
+.cursoDuracion {
+    border: 1px solid #4A362E;
+    border-radius: 99px;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.cursoTitulo {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 90%;
+}
+
+.cursoTitulo span {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cursoClases {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cursoBreve {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sortMenu h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 48px;
+    margin: 60px auto;
+}
+
+.titleItalic {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.sortMenu ul {
+    list-style: none;
+
+}
+
+.sortMenu ul li button {
+    margin-bottom: 40px;
+    border: none;
+    background: none;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+
+    .cursos {
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sortMenu h2 {
+        padding-left: 1rem;
+    }
+
+    .sortMenu ul {
+        display: none;
+    }
+
+    .cursosContainer {
+        width: 90%;
+        margin: auto;
+        gap: 2rem;
+    }
+
+    .cursoContainer {
+        width: 100%;
+        margin: 0;
+    }
+}
