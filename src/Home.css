@@ -1,3 +1,9 @@
+.homePage {
+    height: 100dvh;
+    position: relative;
+    overflow: hidden;
+}
+
 .homeMenu {
     display: flex;
     flex-direction: column;
@@ -89,4 +95,58 @@ ul li.active a {
 
 .imageContainer img {
     border-radius: 15px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 650px) {
+
+    .mobile {
+        display: block;
+    }
+
+    .homeMenu .desktop {
+        display: none;
+    }
+
+    .homeMenu {
+        position: relative;
+        justify-content: start;
+        max-width: 90%;
+        margin: auto;
+        gap: 30px;
+        padding: 0;
+        height: auto;
+    }
+
+    .welcomeMessage {
+        padding-left: 0;
+        font-size: 45px;
+    }
+
+    .verCursos {
+        background: none;
+        border: 0.4px solid #000000;
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        font-weight: 500;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .homeGalleryContainer {
+        margin-top: 30px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+    }
+
+    .homeGallery {
+        margin-left: -45%;
+        margin-top: -55%;
+        width: 130%;
+    }
 }

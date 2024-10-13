@@ -6,6 +6,7 @@ import Slider from "react-slick";
 
 import { Link, useLocation } from 'react-router-dom';
 import './Home.css';
+import Navmenu from './Navmenu.js';
 
 function Homepage() {
 
@@ -107,13 +108,16 @@ function Homepage() {
   /*-----------------------------------------------------------------------------------*/
 
   return (
-    <>
+    <div className="homePage">
       <img className='backgroundDecoration' src='./resources/backgroundimg.webp' alt='' />
-
+      <div className="mobile">
+        <Navmenu />
+      </div>
       <header className='homeMenu'>
-        <Link to={'/'}><img src='./resources/ariasbazanlogo.png' alt='logo' /></Link>
+        <Link to={'/'}><img src='./resources/ariasbazanlogo.png' alt='logo' className="desktop" /></Link>
         <h2 className="welcomeMessage">Bienvenido a <br /><span>Arias Bazán</span></h2>
-        <div>
+        <Link to={'/cursos'} className="verCursos mobile">Ver cursos</Link>
+        <div className="desktop">
           <ul>
             <NavItem path="/" label="Inicio" />
             <NavItem path="/cursos" label="Cursos" />
@@ -167,7 +171,7 @@ function Homepage() {
         </div>
       </div>
 
-    </>
+    </div>
 
   );
 }

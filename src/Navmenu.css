@@ -114,6 +114,7 @@ ul li.active a {
     background-color: #FAEEE7;
     animation: fadeIn 0.3s ease-in-out;
     z-index: 15;
+    overflow-x: hidden;
   }
 
   #menuLinks ul {

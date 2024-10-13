@@ -206,6 +206,7 @@ function Cursos({ courseType, setselectedCourseType }) {
   };
 
   // Cleanup effect to re-enable scrolling when the component unmounts
+
   useEffect(() => {
     return () => {
       document.body.style.overflowY = 'auto';
@@ -225,7 +226,7 @@ function Cursos({ courseType, setselectedCourseType }) {
   return (
     <>
       <img className='backgroundDecoration' src='./resources/backgroundimg.webp' alt='' />
-      <Navmenu courseType={courseType} setselectedCourseType={setselectedCourseType}/>
+      <Navmenu courseType={courseType} setselectedCourseType={setselectedCourseType} />
 
       <div className="cursos">
         <div className="sortMenu">
