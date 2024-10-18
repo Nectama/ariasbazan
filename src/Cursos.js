@@ -15,6 +15,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         clases: '2hs semanales',
         materiales: '| Incluye algunos materiales',
         shortText: 'Domina el arte del maquillaje desde lo básico hasta lo profesional. Aprende técnicas para todas las edades y ocasiones especiales. Obtén el certificado de Maquillador Social y accede al curso avanzado. Descubre la creatividad en TV, cine, y más. Amplía tus horizontes con historia del maquillaje y la moda. Prepárate para una carrera exitosa. ¡Inscríbete hoy y conviértete en un experto maquillador profesional!',
+        callToAction: '¡Inscríbete hoy y conviértete en un experto maquillador profesional!',
         imagen: './resources/maquisocialprofesional.png'
       },
       {
@@ -196,14 +197,24 @@ function Cursos({ courseType, setselectedCourseType }) {
 
   const openModal = (index) => {
     setSelectedCurso(index);
+    setIsAnimating(true); // Start the animation
     document.body.style.overflow = 'hidden'; // Disable body scrolling
   };
 
   const closeModal = () => {
-    setSelectedCurso(null);
-    document.body.style.overflowY = 'auto';
-    document.body.style.overflowX = 'hidden';// Enable body scrolling
+    setIsClosing(true); // Start closing animation
+    setTimeout(() => {
+      setSelectedCurso(null);
+      setIsClosing(false); // Reset closing state
+      document.body.style.overflowY = 'auto';
+      document.body.style.overflowX = 'hidden';
+    }, 300); // Timeout matches the duration of the CSS animation
   };
+
+  // Animation handling for opening and closing modal
+
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   // Cleanup effect to re-enable scrolling when the component unmounts
 
@@ -257,8 +268,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         <div className="cursosContainer">
           {displayedCourses.map((curso, index) => (
             <div className="cursoContainer" key={index}>
-              <div className="pointer" onClick={() => openModal(index)}></div>
-              <div className="tarjetaCurso">
+              <div className="tarjetaCurso pointer" onClick={() => openModal(index)}>
                 <img className="cursoImagen" src={curso.imagen} alt="" />
                 <p className="cursoDuracion">{curso.duracion}</p>
                 <h2 className="cursoTitulo">{curso.cursoTitulo}<span className='titleItalic'>{curso.cursoTitulo2}</span></h2>
@@ -270,52 +280,36 @@ function Cursos({ courseType, setselectedCourseType }) {
         </div>
       </div>
 
-      {/* {selectedCurso !== null && (
-        <div className="modalContainer">
+      {selectedCurso !== null && (
+        <div className={`modalContainer ${isClosing ? 'modalClose' : 'modalOpen'}`}>
           <div
             className="modalOverlay"
             onClick={closeModal}
           ></div>
-          <div className="modalContent">
+          <div className={`modalOuter ${isAnimating ? 'modalOpen' : ''}`}>
 
-            <div className="modalHeader">
-              <h2 className="cursoTitulo"><span className='modalTitle bold'>{cursosTradicionales[selectedCurso].curso}</span>{cursosTradicionales[selectedCurso].descriptionSmall}</h2>
-            </div>
+            <img src={coursesData[selectedCourseLabel][selectedCurso].imagen} alt='' />
 
-            <div className="cursoDescription">
-              <div dangerouslySetInnerHTML={{ __html: cursosTradicionales[selectedCurso].descriptionBig }} />
-            </div>
-            <div className='cursoObjetivos'>
-              <h5>Objetivos</h5>
-              <div dangerouslySetInnerHTML={{ __html: cursosTradicionales[selectedCurso].objectives }} />
-            </div>
-            <div className='cursoTopics'>
-              <h5>Ejes Temáticos</h5>
-              <div dangerouslySetInnerHTML={{ __html: cursosTradicionales[selectedCurso].topics }} />
-            </div>
-            <div className='cursoMethod'>
-              <h5>Metodología</h5>
-              <div dangerouslySetInnerHTML={{ __html: cursosTradicionales[selectedCurso].methodology }} />
-            </div>
+            <div className='modalContent'>
 
-            <div className="modalFooter">
-              <div className='modalFooterLeft'>
-                <img className="cursoTrainer" src={cursosTradicionales[selectedCurso].profile} alt={cursosTradicionales[selectedCurso].docente} />
-                <Link to={`/nosotros#${cursosTradicionales[selectedCurso].docenteId}`} className='pointer'><img className='masInfoTrainer pointer' src='./resources/masInfoTrainer.png' alt='conocé más sobre tu trainer' /></Link>
-                <span className='bold'>{cursosTradicionales[selectedCurso].docente}</span>
+
+              <div className="modalHeader">
+                <h2 className="cursoTitulo">{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo}<span className='titleItalic'>{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo2}</span></h2>
               </div>
-              <div className='modalFooterRight'>
-                <div>
-                  <span className='price'>{cursosTradicionales[selectedCurso].price}</span>
-                  <p className='bold'>Tarjeta de Crédito / Débito<br />Transferencia bancaria </p>
-                </div>
-                <Link className='pointer' to={`/inscripciones#${cursosTradicionales[selectedCurso].curso}`}>INSCRIBIRME</Link>
+
+              <p className='modalText'>{coursesData[selectedCourseLabel][selectedCurso].shortText}</p>
+              <p className='bold'>{coursesData[selectedCourseLabel][selectedCurso].callToAction}</p>
+
+              <div className='modalButtons'>
+                <a href="https://wa.me/5493516526268?text=Hola%20quisiera%20consultar%20información%20sobre" target='_blank'>Consultar Info</a>
+                <button className='pointer bold' onClick={closeModal}>Volver a todos los cursos</button>
               </div>
+
             </div>
 
           </div>
         </div>
-      )} */}
+      )}
 
     </>
   );
