@@ -1,14 +1,32 @@
+.cursosSection {
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .cursos {
+    padding-top: 30px;
+    position: relative;
     width: 90%;
-    margin: 80px auto;
+    height: 75%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
 .cursosContainer {
     width: 75%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 25%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge hidden scrollbar */
+    scrollbar-width: none;
+    /* Firefox hidden scrollbar*/
 }
 
 .cursoContainer {
@@ -58,6 +76,10 @@
     font-weight: 400;
 }
 
+.sortMenu {
+    position: fixed;
+}
+
 .sortMenu h2 {
     font-family: "Playfair Display", serif;
     font-weight: 500;
@@ -86,11 +108,25 @@
 
 @media (max-width: 650px) {
 
+    .cursosSection {
+        height: auto;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
     .cursos {
+        padding-top: 0;
         width: 100%;
         margin: 0px auto;
         display: flex;
         flex-direction: column;
+    }
+
+    .sortMenu {
+        position: relative;
     }
 
     .sortMenu h2 {
@@ -105,6 +141,7 @@
         width: 90%;
         margin: auto;
         gap: 2rem;
+
     }
 
     .cursoContainer {

@@ -236,80 +236,83 @@ function Cursos({ courseType, setselectedCourseType }) {
 
   return (
     <>
-      <img className='backgroundDecoration' src='./resources/backgroundimg.webp' alt='' />
-      <Navmenu courseType={courseType} setselectedCourseType={setselectedCourseType} />
+      <div className="cursosSection">
+        <img className='backgroundDecoration' src='./resources/backgroundimg.webp' alt='' />
+        <Navmenu courseType={courseType} setselectedCourseType={setselectedCourseType} />
 
-      <div className="cursos">
-        <div className="sortMenu">
-          <h2>Cursos <br /><span className='titleItalic'>{selectedCourseLabel}</span></h2> {/* Dynamically show selected course label */}
-          <ul>
-            <li>
-              <button style={{ fontWeight: courseType === 'tradicionales' ? 'bold' : 'normal' }} value="tradicionales" onClick={handleCourseTypeChange}>
-                Tradicionales
-              </button>
-            </li>
-            <li>
-              <button style={{ fontWeight: courseType === 'online' ? 'bold' : 'normal' }} value="online" onClick={handleCourseTypeChange}>
-                Online
-              </button>
-            </li>
-            <li>
-              <button style={{ fontWeight: courseType === 'fashion' ? 'bold' : 'normal' }} value="fashion" onClick={handleCourseTypeChange}>
-                Moda
-              </button>
-            </li>
-            <li>
-              <button style={{ fontWeight: courseType === 'advanced' ? 'bold' : 'normal' }} value="advanced" onClick={handleCourseTypeChange}>
-                Avanzado
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div className="cursosContainer">
-          {displayedCourses.map((curso, index) => (
-            <div className="cursoContainer" key={index}>
-              <div className="tarjetaCurso pointer" onClick={() => openModal(index)}>
-                <img className="cursoImagen" src={curso.imagen} alt="" />
-                <p className="cursoDuracion">{curso.duracion}</p>
-                <h2 className="cursoTitulo">{curso.cursoTitulo}<span className='titleItalic'>{curso.cursoTitulo2}</span></h2>
-                <p className="cursoClases">{curso.clases} {curso.materiales}</p>
-                <h4 className="cursoBreve">{curso.shortText}</h4>
+        <div className='cursos'>
+          <div className="sortMenu">
+            <h2>Cursos <br /><span className='titleItalic'>{selectedCourseLabel}</span></h2> {/* Dynamically show selected course label */}
+            <ul>
+              <li>
+                <button style={{ fontWeight: courseType === 'tradicionales' ? 'bold' : 'normal' }} value="tradicionales" onClick={handleCourseTypeChange}>
+                  Tradicionales
+                </button>
+              </li>
+              <li>
+                <button style={{ fontWeight: courseType === 'online' ? 'bold' : 'normal' }} value="online" onClick={handleCourseTypeChange}>
+                  Online
+                </button>
+              </li>
+              <li>
+                <button style={{ fontWeight: courseType === 'fashion' ? 'bold' : 'normal' }} value="fashion" onClick={handleCourseTypeChange}>
+                  Moda
+                </button>
+              </li>
+              <li>
+                <button style={{ fontWeight: courseType === 'advanced' ? 'bold' : 'normal' }} value="advanced" onClick={handleCourseTypeChange}>
+                  Avanzado
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div className="cursosContainer">
+            {displayedCourses.map((curso, index) => (
+              <div className="cursoContainer" key={index}>
+                <div className="tarjetaCurso pointer" onClick={() => openModal(index)}>
+                  <img className="cursoImagen" src={curso.imagen} alt="" />
+                  <p className="cursoDuracion">{curso.duracion}</p>
+                  <h2 className="cursoTitulo">{curso.cursoTitulo}<span className='titleItalic'>{curso.cursoTitulo2}</span></h2>
+                  <p className="cursoClases">{curso.clases} {curso.materiales}</p>
+                  <h4 className="cursoBreve">{curso.shortText}</h4>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {selectedCurso !== null && (
-        <div className={`modalContainer ${isClosing ? 'modalClose' : 'modalOpen'}`}>
-          <div
-            className="modalOverlay"
-            onClick={closeModal}
-          ></div>
-          <div className={`modalOuter ${isAnimating ? 'modalOpen' : ''}`}>
-
-            <img src={coursesData[selectedCourseLabel][selectedCurso].imagen} alt='' />
-
-            <div className='modalContent'>
-
-
-              <div className="modalHeader">
-                <h2 className="cursoTitulo">{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo}<span className='titleItalic'>{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo2}</span></h2>
-              </div>
-
-              <p className='modalText'>{coursesData[selectedCourseLabel][selectedCurso].shortText}</p>
-              <p className='bold'>{coursesData[selectedCourseLabel][selectedCurso].callToAction}</p>
-
-              <div className='modalButtons'>
-                <a href="https://wa.me/5493516526268?text=Hola%20quisiera%20consultar%20información%20sobre" target='_blank'>Consultar Info</a>
-                <button className='pointer bold' onClick={closeModal}>Volver a todos los cursos</button>
-              </div>
-
-            </div>
-
+            ))}
           </div>
         </div>
-      )}
+
+        {selectedCurso !== null && (
+          <div className={`modalContainer ${isClosing ? 'modalClose' : 'modalOpen'}`}>
+            <div
+              className="modalOverlay"
+              onClick={closeModal}
+            ></div>
+            <div className={`modalOuter ${isAnimating ? 'modalOpen' : ''}`}>
+
+              <img src={coursesData[selectedCourseLabel][selectedCurso].imagen} alt='' />
+
+              <div className='modalContent'>
+
+
+                <div className="modalHeader">
+                  <h2 className="cursoTitulo">{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo}<span className='titleItalic'>{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo2}</span></h2>
+                </div>
+
+                <p className='modalText'>{coursesData[selectedCourseLabel][selectedCurso].shortText}</p>
+                <p className='bold'>{coursesData[selectedCourseLabel][selectedCurso].callToAction}</p>
+
+                <div className='modalButtons'>
+                  <a href="https://wa.me/5493516526268?text=Hola%20quisiera%20consultar%20información%20sobre" target='_blank'>Consultar Info</a>
+                  <button className='pointer bold' onClick={closeModal}>Volver a todos los cursos</button>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        )}
+      </div>
+
 
     </>
   );
