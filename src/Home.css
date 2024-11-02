@@ -146,14 +146,17 @@ ul li.active a {
         z-index: -1;
         top: 0;
         margin-left: 25%;
-        overflow: visible;
+        overflow: visible clip;
     }
 
     .homeGallery {
         margin-left: -20%;
-        margin-top: -10%;
+        margin-top: 0;
         width: 130%;
+    }
 
+    .slider-container:nth-of-type(2) {
+        margin-top: -15%;
     }
 }
 
@@ -198,11 +201,17 @@ ul li.active a {
         height: 100%;
         z-index: -1;
         top: 0;
+        margin-left: auto;
+        overflow: hidden;
     }
 
     .homeGallery {
         margin-left: -45%;
         margin-top: -55%;
         width: 130%;
+    }
+
+    .slider-container:nth-of-type(2) {
+        margin-top: auto;
     }
 }
