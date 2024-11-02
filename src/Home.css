@@ -101,6 +101,62 @@ ul li.active a {
     display: none;
 }
 
+@media (max-width: 1200px) {
+
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .homeMenu .desktop {
+        display: none;
+    }
+
+    .homeMenu {
+        position: relative;
+        justify-content: start;
+        max-width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        gap: 30px;
+        padding: 0;
+        height: auto;
+    }
+
+    .welcomeMessage {
+        padding-left: 0;
+        font-size: 45px;
+    }
+
+    .verCursos {
+        width: fit-content;
+        background: none;
+        border: 0.4px solid #000000;
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        font-weight: 500;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .homeGalleryContainer {
+        margin-top: 30px;
+        position: relative;
+        width: 80%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        margin-left: 25%;
+        overflow: visible;
+    }
+
+    .homeGallery {
+        margin-left: -20%;
+        margin-top: -10%;
+        width: 130%;
+
+    }
+}
+
 @media (max-width: 650px) {
 
     .mobile {

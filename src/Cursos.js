@@ -274,7 +274,7 @@ function Cursos({ courseType, setselectedCourseType }) {
                   <p className="cursoDuracion">{curso.duracion}</p>
                   <h2 className="cursoTitulo">{curso.cursoTitulo}<span className='titleItalic'>{curso.cursoTitulo2}</span></h2>
                   <p className="cursoClases">{curso.clases} {curso.materiales}</p>
-                  <h4 className="cursoBreve">{curso.shortText}</h4>
+                  <p className="cursoBreve">{curso.shortText}</p>
                 </div>
               </div>
             ))}

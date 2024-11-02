@@ -115,7 +115,7 @@ function Nosotros() {
         </div>
       </div>
       <div className='closingLine'>
-        <h3>Bienvenido a la revolución de la belleza, bienvenido al <span className='titleItalic underline'>mundo de Arias Bazán.</span></h3>
+        <h3>Bienvenido a la revolución de la belleza,<br className='mobileOnly' /> bienvenido al <span className='titleItalic underline'>mundo de Arias Bazán.</span></h3>
       </div>
       <div className='sucursales'>
         <p className='sucursalesTitle'>Nuestras sucursales</p>
