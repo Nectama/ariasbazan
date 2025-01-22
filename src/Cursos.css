@@ -40,9 +40,27 @@
     gap: 1rem;
 }
 
+.imgContainer {
+    overflow: hidden;
+    height: 145px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
 .tarjetaCurso,
 .cursoImagen {
     max-width: 100%;
+}
+
+.cursoImagen {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 500ms;
+}
+
+.cursoImagen:hover {
+    transform: scale(1.2);
 }
 
 .cursoDuracion {
@@ -86,6 +104,8 @@
     font-weight: 500;
     font-size: 48px;
     margin: 60px auto;
+    max-width: 20dvw;
+    text-wrap: wrap;
 }
 
 .titleItalic {
