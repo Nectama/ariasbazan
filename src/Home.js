@@ -12,17 +12,14 @@ function Homepage() {
 
   /* var containing paths to all images displayed in the homepage grid */
 
-  const homeGallery = [
-    "./resources/homegallery1.png",
-    "./resources/homegallery2.png",
-    "./resources/homegallery3.png",
-    "./resources/homegallery4.png",
-    "./resources/homegallery5.png",
-    "./resources/homegallery6.png",
-    "./resources/homegallery7.png",
-    "./resources/homegallery8.png",
-    "./resources/homegallery9.png"
-  ]
+  const homeGallery1 = [];
+  const homeGallery2 = [];
+  const homeGallery3 = [];
+  for (let i = 1; i <= 10; i++) {
+    homeGallery1.push(`./resources/gallery/${i}.jpg`);
+    homeGallery2.push(`./resources/gallery/${10 + i}.jpg`);
+    homeGallery3.push(`./resources/gallery/${20 + i}.jpg`);
+  }
 
   /* Settings for the react-slick slider */
 
@@ -135,7 +132,7 @@ function Homepage() {
           <div className="slider-container">
 
             <Slider {...settings}>
-              {homeGallery.map((image, index) => (
+              {homeGallery1.map((image, index) => (
                 <div className="imageContainer">
                   <img key={index} src={image} alt="" />
                 </div>
@@ -147,7 +144,7 @@ function Homepage() {
           <div className="slider-container">
 
             <Slider {...settings2}>
-              {homeGallery.map((image, index) => (
+              {homeGallery2.map((image, index) => (
                 <div className="imageContainer">
                   <img key={index} src={image} alt="" />
                 </div>
@@ -159,7 +156,7 @@ function Homepage() {
           <div className="slider-container">
 
             <Slider {...settings}>
-              {homeGallery.map((image, index) => (
+              {homeGallery3.map((image, index) => (
                 <div className="imageContainer">
                   <img key={index} src={image} alt="" />
                 </div>

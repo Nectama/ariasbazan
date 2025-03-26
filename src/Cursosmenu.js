@@ -1,6 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
 import './Cursos.css';
 
 function CursosMenu({ courseType, setselectedCourseType }) {
@@ -19,20 +18,21 @@ function CursosMenu({ courseType, setselectedCourseType }) {
           </button>
         </li>
         <li>
-          <button style={{ fontWeight: courseType === 'online' ? 'bold' : 'normal' }} value="online" onClick={handleCourseTypeChange}>
-            Online
-          </button>
-        </li>
-        <li>
-          <button style={{ fontWeight: courseType === 'fashion' ? 'bold' : 'normal' }} value="fashion" onClick={handleCourseTypeChange}>
-            Moda
-          </button>
-        </li>
-        <li>
           <button style={{ fontWeight: courseType === 'advanced' ? 'bold' : 'normal' }} value="advanced" onClick={handleCourseTypeChange}>
-            Avanzado
+            de Perfeccionamiento e Intensivos
           </button>
         </li>
+        {/* Categorías para agregar en el futuro */}
+        {/* <li>
+                <button style={{ fontWeight: courseType === 'online' ? 'bold' : 'normal' }} value="online" onClick={handleCourseTypeChange}>
+                  Online
+                </button>
+              </li>
+              <li>
+                <button style={{ fontWeight: courseType === 'fashion' ? 'bold' : 'normal' }} value="fashion" onClick={handleCourseTypeChange}>
+                  Moda
+                </button>
+              </li> */}
       </ul>
     </div>
   );

@@ -10,7 +10,7 @@ function Galeria() {
 
   const galleryImages = [];
   for (let i = 1; i <= 100; i++) {
-    galleryImages.push({ id: i, src: `./resources/gallery/${i}.png`, width: 1160, height: 1548 });
+    galleryImages.push({ id: i, src: `./resources/gallery/${i}.jpg`, width: 1160, height: 1548 });
   }
 
   const renderRows = () => {
