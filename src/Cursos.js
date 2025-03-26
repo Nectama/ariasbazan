@@ -14,7 +14,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '10 meses',
         clases: '2hs semanales',
         materiales: '| Incluye algunos materiales',
-        shortText: 'Domina el arte del maquillaje desde lo básico hasta lo profesional. Aprende técnicas para todas las edades y ocasiones especiales. Obtén el certificado de Maquillador Social y accede al curso avanzado. Descubre la creatividad en TV, cine, y más. Amplía tus horizontes con historia del maquillaje y la moda. Prepárate para una carrera exitosa. ¡Inscríbete hoy y conviértete en un experto maquillador profesional!',
+        shortText: 'Aprende desde las bases hasta técnicas avanzadas de maquillaje para eventos, moda y producciones, desarrollando habilidades profesionales con las últimas tendencias y productos del mercado.',
         callToAction: '¡Inscríbete hoy y conviértete en un experto maquillador profesional!',
         imagen: './resources/cursos-tradicionales/tradicionales-maquillaje.webp'
       },
@@ -24,7 +24,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '5 meses',
         clases: '2hs semanales',
         materiales: '| Incluye algunos materiales',
-        shortText: 'Descubre el arte completo de la Manicura en nuestro curso estructurado en varios módulos especializados. Aprende desde la Manicuría Básica y Belleza de Manos hasta técnicas avanzadas como Uñas Esculpidas en Gel y Manicuría Rusa. Prácticas intensivas con modelos aseguran tu desarrollo profesional. Perfecto para quienes buscan dominar cada aspecto del cuidado de uñas y pies con métodos modernos como el Sistema DIP. ¡Inscríbete y transforma tu pasión en una carrera exitosa!',
+        shortText: 'Domina el cuidado y embellecimiento de uñas con esmaltado tradicional y semipermanente, nail art, decoración y técnicas avanzadas para ofrecer un servicio profesional de alta calidad.',
         imagen: './resources/cursos-tradicionales/tradicionales-manicuria.webp'
       },
       {
@@ -32,7 +32,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         cursoTitulo2: 'imagen',
         duracion: '5 meses',
         clases: '2hs semanales',
-        shortText: 'Descubre la Asesoría de Imagen, donde aprenderás a identificar siluetas, potenciar estilos y optimizar guardarropas. Aprende técnicas de colorimetría para elegir los colores ideales. No se requieren conocimientos previos; desde principiantes hasta profesionales, todos pueden beneficiarse. Este curso es para todos los géneros y te prepara para una carrera en asesoría de imagen personal. Transforma tu estilo y comunicación visual, mejorando tu impacto en todas las áreas de tu vida con confianza y conocimiento.',
+        shortText: 'Descubre cómo potenciar la imagen personal y profesional con análisis de colorimetría, morfología, estilo y vestimenta, brindando herramientas para transformar y asesorar a tus clientes.',
         imagen: './resources/cursos-tradicionales/tradicionales-asesoria.webp'
       },
       {
@@ -41,7 +41,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '4 meses',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluidos',
-        shortText: 'Domina el arte de la Barbería y Corte Masculino en nuestro curso práctico y completo. Aprende técnicas desde el corte básico hasta estilos avanzados como Fade y Razor Fade. Clases teórico-prácticas con modelo aseguran tu dominio profesional. No se requiere experiencia previa; te proporcionamos todo lo necesario para practicar fuera de clases. Al finalizar, examen con 100% de asistencia obligatoria. Prepárate para una carrera dinámica y llena de estilo. ¡Inscríbete y transforma tu pasión en profesión!',
+        shortText: 'Aprende cortes clásicos y modernos, afeitado, degradados y técnicas especializadas para ofrecer un servicio completo en barbería, con las últimas tendencias en estética masculina.',
         imagen: './resources/cursos-tradicionales/tradicionales-barberia.webp'
       },
       {
@@ -50,7 +50,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '5 meses',
         clases: '2hs semanales',
         materiales: '| Materiales no incluídos',
-        shortText: 'Sumérgete en el mundo de la cosmetología con nuestro curso especializado. Aprende a diagnosticar y tratar la piel con técnicas personalizadas y aparatología avanzada. Grupos reducidos garantizan atención individualizada. Perfecto para todos, sin necesidad de experiencia previa. Descubre tu potencial en el cuidado de la piel y únete a nuestra comunidad de aprendizaje. ¡Inscríbete ahora y conviértete en un experto en cosmetología!',
+        shortText: 'Formación integral en el cuidado de la piel, tratamientos faciales, limpieza profunda, aparatología estética y técnicas cosméticas para mejorar la salud y apariencia facial.',
         imagen: './resources/cursos-tradicionales/tradicionales-cosmetologia.webp'
       },
       {
@@ -59,7 +59,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '3 clases',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'Domina el arte del Lifting, Nutrición y Tinte de Pestañas en nuestro curso intensivo. Aprende técnicas avanzadas para lograr la curvatura perfecta y mantener pestañas saludables. Cuatro clases prácticas aseguran dominio completo. Ideal para quienes buscan ofrecer servicios de alta demanda y calidad. ¡Inscríbete ahora y conviértete en un experto en realzar la belleza natural de las pestañas!',
+        shortText: 'Aprende a realzar la mirada con la técnica de lifting, proporcionando curvatura y definición natural a las pestañas sin necesidad de extensiones o rizadores.',
         imagen: './resources/cursos-tradicionales/tradicionales-lifting.webp'
       },
       {
@@ -68,7 +68,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 mes',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'Perfecciona tu técnica en Extensiones de Pestañas pelo por pelo con nuestro curso intensivo. Aprende todo sobre morfología del ojo, tipos de extensiones, adhesivos y más. Clases prácticas con muñeco de práctica y modelo real aseguran dominio de la técnica. Atención personalizada con solo dos alumnas por horario. Impulsa tu carrera en este servicio altamente demandado y rentable. ¡Inscríbete ahora y domina el arte de realzar miradas con pestañas impecables!',
+        shortText: 'Domina la aplicación de extensiones individuales para lograr pestañas más largas, voluminosas y naturales, con técnicas adaptadas a cada tipo de ojo y preferencia.',
         imagen: './resources/cursos-tradicionales/tradicionales-extensionpestanas.webp'
       },
       {
@@ -76,7 +76,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         cursoTitulo2: 'publicitario',
         duracion: '2 meses',
         clases: '2hs semanales',
-        shortText: 'Descubre el mundo del modelaje publicitario con nuestro curso online. Diseñado para modelos independientes que buscan brillar en la industria, aprenderás desde poses y técnicas frente a la cámara hasta construcción de marca y tendencias actuales. Perfecto para principiantes, sin necesidad de experiencia previa. Únete a nosotros y prepárate para destacar en castings, editoriales y más. ¡Inscríbete ahora y empieza a modelar tu futuro con nosotros!',
+        shortText: 'Aprende a desenvolverte frente a cámaras, mejorar tu expresión corporal y dominar poses para campañas, pasarelas y sesiones fotográficas en la industria de la moda y publicidad.',
         imagen: './resources/cursos-tradicionales/tradicionales-modelo.webp'
       },
       {
@@ -84,7 +84,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         cursoTitulo2: 'con tu móvil',
         duracion: '2 meses',
         clases: '2hs semanales',
-        shortText: 'Descubre el arte de la Fotografía para Redes Sociales con tu móvil. Desde principiantes hasta expertos, aprenderás composición, iluminación y edición para capturar imágenes impactantes. No se requieren conocimientos previos; el curso te guiará desde lo básico hasta técnicas avanzadas. Explora estilos fotográficos, tendencias y cómo generar contenido visual que destaque. Ideal para emprendedores y creativos que buscan potenciar su presencia en redes. Únete a nosotros y transforma tu smartphone en una herramienta de expresión artística.',
+        shortText: 'Descubre cómo capturar, editar y optimizar fotos profesionales con tu celular para potenciar tu imagen en redes sociales y atraer más seguidores o clientes.',
         imagen: './resources/cursos-tradicionales/tradicionales-fotografia.webp'
       },
       {
@@ -93,7 +93,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 mes',
         clases: '2hs semanales',
         materiales: '| Materiales no incluídos',
-        shortText: 'Descubre el arte del perfilado de cejas, uno de los servicios más solicitados y rentables en el mundo del maquillaje. Aprende la teoría y técnicas precisas para perfilar con pinza, adaptadas a cada morfología facial. Las clases prácticas incluyen la oportunidad de trabajar con modelos, proporcionados por ti mismo/a, para evaluación directa en clase. No pierdas esta oportunidad de aprender y atraer clientela recurrente. ¡Inscríbete y destaca en este lucrativo campo del maquillaje!',
+        shortText: 'Aprende a analizar, diseñar y perfilar cejas según la estructura facial, aplicando técnicas de depilación, visagismo y diseño personalizado para cada cliente.',
         imagen: './resources/cursos-tradicionales/tradicionales-perfilado.webp'
       },
       {
@@ -102,7 +102,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '5 meses',
         clases: '2hs semanales',
         materiales: '| Incluye algunos materiales',
-        shortText: 'Descubre tu creatividad con nuestro Curso de Maquillaje Artístico y Caracterización. Diseñado para desarrollar y potenciar tu talento, cada clase explora temas como animales, payasos, maquillaje infantil, y más. Perfecto para maquilladores, actores o cualquier persona interesada en el arte del maquillaje. Aprende técnicas avanzadas y habilidades comerciales clave. Amplía tu repertorio profesional y destaca en este campo emocionante. ¡Inscríbete ahora y haz realidad tu potencial artístico!',
+        shortText: 'Explora técnicas avanzadas de maquillaje escénico, fantasía y efectos especiales para teatro, cine, televisión y eventos temáticos, desarrollando creatividad y precisión.',
         imagen: './resources/cursos-tradicionales/tradicionales-artistico.webp'
       },
       {
@@ -111,7 +111,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '2 meses',
         clases: '2hs semanales',
         materiales: '| Incluye algunos materiales',
-        shortText: 'Domina el arte del Maquillaje Cotillón en nuestro curso INTENSIVO. Aprende todo sobre servicios para eventos, Glitter Bar, y maquillaje neón. Incluimos parte de los productos; necesitarás tus herramientas. Enfoque práctico en manejo de pinceles y creatividad en diseño de maquillaje. Ideal para emprendedores sin experiencia previa. Desarrolla tu marca y aprende marketing profesional para eventos. ¡Únete y convierte tu pasión en un negocio vibrante y exitoso!',
+        shortText: 'Domina técnicas de maquillaje festivo con glitter, piedras y colores vibrantes, creando looks llamativos ideales para fiestas, eventos y festivales.',
         imagen: './resources/cursos-tradicionales/tradicionales-cotillon.webp'
       },
       {
@@ -120,7 +120,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '4 meses',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'Domina el arte del Peinado Social y de Moda con nuestro curso especializado. Aprende desde técnicas básicas hasta avanzadas para eventos y producciones comerciales. Prácticas intensivas con diversas herramientas aseguran tu dominio. Ideal para quienes desean incursionar en el mundo del peinado sin experiencia previa. ¡Únete y desarrolla tu carrera en una industria dinámica y en crecimiento!',
+        shortText: 'Aprende a realizar peinados elegantes y modernos para bodas, eventos y producciones, dominando trenzas, recogidos, ondas y técnicas de estilismo.',
         imagen: './resources/cursos-tradicionales/tradicionales-peinado.webp'
       },
     ],
@@ -131,7 +131,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 mes',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluidos',
-        shortText: 'Descubre el arte de las trenzas en nuestro curso accesible para todos. Aprende desde cero con técnicas básicas y avanzadas como trenza de 2 cabos, espiga y más. Dominarás el manejo del cabello, productos adecuados y cuidados esenciales. Perfecto para quienes desean crear peinados únicos y duraderos. ¡Inscríbete ahora y convierte tu creatividad en hermosas trenzas!',
+        shortText: 'Aprende a crear trenzas básicas, avanzadas y de tendencia, combinando estilos modernos para peinados elegantes, casuales o para eventos especiales.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-trenzas.webp'
       },
       {
@@ -140,7 +140,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '2 meses',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Perfecciona técnicas de maquillaje de ojos con acabados glamorosos, dominando difuminados, pigmentos, delineados y pestañas para lograr miradas impactantes.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-ojos.webp'
       },
       {
@@ -149,7 +149,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 mes',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Aprende a aplicar extensiones de pestañas con distintos efectos, desde natural hasta dramático, personalizando la técnica según la estructura ocular de cada cliente.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-pestanas.webp'
       },
       {
@@ -158,7 +158,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 clase',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Domina el laminado de cejas para fijarlas y definirlas, aplicando henna para dar color y nutrición para fortalecer el vello.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-laminado.webp'
       },
       {
@@ -167,16 +167,16 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 mes',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Aprende a aplicar extensiones individuales en cejas para dar volumen y corregir áreas despobladas, logrando un efecto natural y duradero.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-extension.webp'
       },
       {
-        cursoTitulo: 'Spa de',
+        cursoTitulo: 'Spa de ',
         cursoTitulo2: 'cejas',
         duracion: '1 clase',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Descubre tratamientos exclusivos para embellecer cejas con hidratación, exfoliación y definición, ofreciendo un servicio premium para realzar la mirada.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-spacejas.webp'
       },
       {
@@ -185,7 +185,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 clase',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Aprende a seleccionar y aplicar correctamente los moldes y curvaturas en el lifting de pestañas, logrando efectos personalizados según el tipo de ojo.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-moldes.webp'
       },
       {
@@ -194,7 +194,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '2 clases',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Domina técnicas de preparación y corrección de piel para lograr un maquillaje impecable, cubriendo imperfecciones y resaltando la belleza natural.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-pieles.webp'
       },
       {
@@ -203,7 +203,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 clase',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Aprende a realizar un maquillaje de alta duración y resistencia a factores externos, ideal para eventos, fotografía y climas extremos.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-blindadas.webp'
       },
       {
@@ -212,7 +212,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 clase',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Descubre cómo combinar colores estratégicamente para resaltar la mirada, aplicando teoría del color en sombras y delineados.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-color.webp'
       },
       {
@@ -221,7 +221,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 clase',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Mejora la técnica de lifting de pestañas con conocimientos avanzados en tiempos de actuación y procedimientos para resultados óptimos.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-lifting.webp'
       },
       {
@@ -230,7 +230,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '1 mes',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Refina tus habilidades en esmaltado semipermanente, nail art y cuidado de uñas con técnicas avanzadas y tendencias actuales.',
         imagen: './resources/cursos-perfeccionamiento/avanzado-manicuria.webp'
       },
       {
@@ -239,7 +239,7 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '2 clases',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Capacitación personalizada para perfeccionar la técnica de lifting de pestañas, adaptada a cada necesidad y nivel de experiencia.',
         imagen: './resources/cursos-perfeccionamiento/privado-lifting.webp'
       },
       {
@@ -248,12 +248,12 @@ function Cursos({ courseType, setselectedCourseType }) {
         duracion: '2 clases',
         clases: '2hs semanales',
         materiales: '| Elementos y materiales no incluídos',
-        shortText: 'placeholder',
+        shortText: 'Entrenamiento exclusivo y personalizado para perfeccionar el diseño, depilación y perfilado de cejas con técnicas avanzadas.',
         imagen: './resources/cursos-perfeccionamiento/privado-cejas.webp'
       },
 
     ],
-    /* Categorías para agregar en el futuro */
+    /* Categorías para agregar en el futuro? */
     /* online: [
       {
         cursoTitulo: 'Placeholder ',
@@ -279,7 +279,7 @@ function Cursos({ courseType, setselectedCourseType }) {
   };
 
   const courseTypeLabels = {
-    tradicionales: 'tradicionales',
+    tradicionales: 'Tradicionales',
     advanced: 'de Perfeccionamiento e Intensivos',
     /* Categorías para agregar en el futuro */
     /* online: 'online',

@@ -139,4 +139,14 @@ ul li.active a {
     }
   }
 
+  .sub-nav div {
+    max-width: 100%;
+    padding: 0;
+    flex: auto;
+
+    >*>*>* {
+      text-align: left;
+    }
+  }
+
 }
