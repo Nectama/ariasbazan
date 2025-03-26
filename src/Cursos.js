@@ -1,6 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
 import './Cursos.css';
 import Navmenu from './Navmenu';
 
@@ -286,39 +285,9 @@ function Cursos({ courseType, setselectedCourseType }) {
     fashion: 'de moda', */
   };
 
-  // const and functions to "open" each course detailed info and block scrolling on the background while doing so
-
-  const [selectedCurso, setSelectedCurso] = useState(null);
-
-  const openModal = (index) => {
-    setSelectedCurso(index);
-    setIsAnimating(true); // Start the animation
-    document.body.style.overflow = 'hidden'; // Disable body scrolling
+  const handleClick = () => {
+    window.open("https://wa.me/5493516526268?text=Hola!%20Quisiera%20realizar%20una%20consulta", "_blank");
   };
-
-  const closeModal = () => {
-    setIsClosing(true); // Start closing animation
-    setTimeout(() => {
-      setSelectedCurso(null);
-      setIsClosing(false); // Reset closing state
-      document.body.style.overflowY = 'auto';
-      document.body.style.overflowX = 'hidden';
-    }, 300); // Timeout matches the duration of the CSS animation
-  };
-
-  // Animation handling for opening and closing modal
-
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [isClosing, setIsClosing] = useState(false);
-
-  // Cleanup effect to re-enable scrolling when the component unmounts
-
-  useEffect(() => {
-    return () => {
-      document.body.style.overflowY = 'auto';
-      document.body.style.overflowX = 'hidden'; // Enable scrolling on component unmount
-    };
-  }, []);
 
   // const and functions to switch between categories and titles
 
@@ -365,7 +334,7 @@ function Cursos({ courseType, setselectedCourseType }) {
           <div className="cursosContainer">
             {displayedCourses.map((curso, index) => (
               <div className="cursoContainer" key={index}>
-                <div className="tarjetaCurso pointer" onClick={() => openModal(index)}>
+                <div className="tarjetaCurso pointer" onClick={handleClick}>
                   <div className='imgContainer'>
                     <img className="cursoImagen" src={curso.imagen} alt="" />
                   </div>
@@ -379,36 +348,6 @@ function Cursos({ courseType, setselectedCourseType }) {
           </div>
         </div>
 
-        {selectedCurso !== null && (
-          <div className={`modalContainer ${isClosing ? 'modalClose' : 'modalOpen'}`}>
-            <div
-              className="modalOverlay"
-              onClick={closeModal}
-            ></div>
-            <div className={`modalOuter ${isAnimating ? 'modalOpen' : ''}`}>
-
-              <img src={coursesData[selectedCourseLabel][selectedCurso].imagen} alt='' />
-
-              <div className='modalContent'>
-
-
-                <div className="modalHeader">
-                  <h2 className="cursoTitulo">{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo}<span className='titleItalic'>{coursesData[selectedCourseLabel][selectedCurso].cursoTitulo2}</span></h2>
-                </div>
-
-                <p className='modalText'>{coursesData[selectedCourseLabel][selectedCurso].shortText}</p>
-                <p className='bold'>{coursesData[selectedCourseLabel][selectedCurso].callToAction}</p>
-
-                <div className='modalButtons'>
-                  <a href="https://wa.me/5493516526268?text=Hola%20quisiera%20consultar%20información%20sobre" target='_blank'>Consultar Info</a>
-                  <button className='pointer bold' onClick={closeModal}>Volver a todos los cursos</button>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        )}
       </div>
 
 

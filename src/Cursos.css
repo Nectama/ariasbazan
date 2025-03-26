@@ -28,6 +28,7 @@
     /* IE and Edge hidden scrollbar */
     scrollbar-width: none;
     /* Firefox hidden scrollbar*/
+    padding-bottom: 50px;
 }
 
 .cursoContainer {
@@ -164,6 +165,7 @@
         margin: auto;
         gap: 1rem;
         justify-content: space-between;
+        padding-bottom: 150px;
     }
 
     .cursoContainer {
