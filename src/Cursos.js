@@ -252,41 +252,15 @@ function Cursos({ courseType, setselectedCourseType }) {
       },
 
     ],
-    /* Categorías para agregar en el futuro? */
-    /* online: [
-      {
-        cursoTitulo: 'Placeholder ',
-        cursoTitulo2: '& more',
-        duracion: '10 meses',
-        clases: '2hs semanales',
-        materiales: '| No incluye materiales',
-        shortText: 'placeholder',
-        imagen: './resources/maquillajeonline.png'
-      },
-    ],
-    fashion: [
-      {
-        cursoTitulo: 'Placeholder ',
-        cursoTitulo2: '& more',
-        duracion: '10 meses',
-        clases: '2hs semanales',
-        materiales: '| No incluye materiales',
-        shortText: 'placeholder',
-        imagen: './resources/maquillajeonline.png'
-      },
-    ], */
   };
 
   const courseTypeLabels = {
     tradicionales: 'Tradicionales',
     advanced: 'de Perfeccionamiento e Intensivos',
-    /* Categorías para agregar en el futuro */
-    /* online: 'online',
-    fashion: 'de moda', */
   };
 
   const handleClick = () => {
-    window.open("https://wa.me/5493516526268?text=Hola!%20Quisiera%20realizar%20una%20consulta", "_blank");
+    window.open("https://wa.me/5493516526268?text=Hola!%20Quisiera%20consultar%20por%20un%20curso", "_blank");
   };
 
   // const and functions to switch between categories and titles
@@ -318,17 +292,6 @@ function Cursos({ courseType, setselectedCourseType }) {
                   de Perfeccionamiento e Intensivos
                 </button>
               </li>
-              {/* Categorías para agregar en el futuro */}
-              {/* <li>
-                <button style={{ fontWeight: courseType === 'online' ? 'bold' : 'normal' }} value="online" onClick={handleCourseTypeChange}>
-                  Online
-                </button>
-              </li>
-              <li>
-                <button style={{ fontWeight: courseType === 'fashion' ? 'bold' : 'normal' }} value="fashion" onClick={handleCourseTypeChange}>
-                  Moda
-                </button>
-              </li> */}
             </ul>
           </div>
           <div className="cursosContainer">

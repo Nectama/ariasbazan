@@ -1,8 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Homepage from './Home';
 import Cursos from './Cursos';
-import Nosotros from './Nosotros';
+import Bio from './Bio';
 import Galeria from './Galeria';
+import Servicios from './Servicios';
 import { useState } from 'react';
 
 function Cosa() {
@@ -19,12 +20,16 @@ function Cosa() {
       element: <Cursos courseType={courseType} setselectedCourseType={setselectedCourseType} />
     },
     {
-      path: '/nosotros',
-      element: <Nosotros />
+      path: '/bio',
+      element: <Bio />
     },
     {
       path: '/galeria',
       element: <Galeria />
+    },
+    {
+      path: '/servicios',
+      element: <Servicios />
     }
 
   ]);
