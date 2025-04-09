@@ -11,7 +11,7 @@ function Bio() {
         <Navmenu />
         <div className='intro'>
           <h2>Un poco <br /><span className='titleItalic'>de nosotros...</span></h2>
-          <p>Imagina un mundo donde la belleza se fusiona con el arte, donde cada rostro se transforma en un lienzo que cuenta una historia única. En el corazón de este mundo vibrante y colorido se encuentra Alejandro Bazan, el alma detrás de la revolucionaria escuela de maquillaje Arias Bazan.</p>
+          <p>Imagina un mundo donde la belleza se fusiona con el arte, donde cada rostro se transforma en un lienzo que cuenta una historia única. En el corazón de este mundo vibrante y colorido se encuentra Alejandro Arias Bazán, el alma detrás de la revolucionaria escuela de maquillaje Arias Bazan.</p>
         </div>
         <div className='bio'>
           <div className='profile'>

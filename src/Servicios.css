@@ -151,9 +151,11 @@
 
     .sortMenu {
         position: relative;
+        max-width: 90%;
     }
 
-    .sortMenu h2 {
+    .sortMenu h2,
+    .sortMenu h4 {
         max-width: 95%;
         margin: 15px auto 30px auto;
     }
@@ -189,9 +191,17 @@
         margin: 0;
     }
 
+    .sortMenu {
+        margin: auto;
+    }
+
     .sortMenu h2 {
         max-width: 90%;
         font-size: 30px;
+    }
+
+    .sortMenu h4 {
+        max-width: 90%;
     }
 
 }
