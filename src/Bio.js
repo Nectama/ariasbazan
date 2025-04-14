@@ -11,7 +11,7 @@ function Bio() {
         <Navmenu />
         <div className='intro'>
           <h2>Un poco <br /><span className='titleItalic'>de nosotros...</span></h2>
-          <p>Imagina un mundo donde la belleza se fusiona con el arte, donde cada rostro se transforma en un lienzo que cuenta una historia única. En el corazón de este mundo vibrante y colorido se encuentra Alejandro Arias Bazán, el alma detrás de la revolucionaria escuela de maquillaje Arias Bazan.</p>
+          <p>Imagina un mundo donde la belleza se fusiona con el arte, donde cada rostro se transforma en un lienzo que cuenta una historia única. En el corazón de este mundo vibrante y colorido se encuentra Alejandro Arias Bazán, EL ALMA DETRÁS DE LA REVOLUCIONARIA ESCUELA DE MAQUILLAJE ARIAS BAZÁN.</p>
         </div>
         <div className='bio'>
           <div className='profile'>
@@ -25,7 +25,7 @@ function Bio() {
             <p>Además, Alejandro Arias Bazán ha participado en eventos internacionales de renombre como el Fashion Week de Nueva York, donde ha colaborado en backstage con diseñadores de talla mundial como Carolina Herrera y Tommy Hilfiger. También es embajador de la moda sudamericana, representando a Argentina en el Andes Fashion Week de Chile.</p>
             <p>Es conocido por su enfoque en la formación y empoderamiento de personas emprendedoras, especialmente aquellas que enfrentan limitaciones económicas. Sus redes sociales reflejan un equilibrio entre su vida profesional y personal, promoviendo un estilo de vida que combina creatividad, emprendimiento y crecimiento personal.</p>
             <p>Arias Bazán también destaca por su visión empresarial y ética profesional. Su filosofía se centra en la importancia de soñar, creer, disfrutar y amar intensamente la vida, un mensaje que lleva incluso tatuado como parte de su identidad personal.</p>
-            <p>La empresa tiene exactamente su esencia y sus valores, ya que la misión es potenciar a todos los alumnos que ingresan a sus diferentes cursos y convertirlos en profesionales del mundo de la moda e invertirlos laboralmente en el mercado. En la actualidad, la empresa cuenta con más de treinta cursos de oficios con rápida salida laboral.</p>
+            <p>La empresa tiene exactamente su esencia y sus valores, ya que la misión es potenciar a todos los alumnos que ingresan a sus diferentes cursos y convertirlos en profesionales del mundo de la moda e insertarlos laboralmente en el mercado. En la actualidad, la empresa cuenta con más de treinta cursos de oficios con rápida salida laboral.</p>
             <p>Más de veinte años en el mercado de la moda, hacen de Arias Bazán uno de los referentes nacionales de nuestro país.</p>
           </div>
         </div>
